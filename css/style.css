@@ -120,3 +120,80 @@ span{
 .img_due:hover{
     filter:grayscale() sepia()
 }
+
+
+.otto .box_img img{
+    transition: all 3s ease 0s;
+}
+.img_tre:hover{
+    filter:grayscale(50%) sepia(50%);
+    border-radius: 15px;
+}
+
+.box_img{
+    display: flex;
+    align-items: center;
+}
+.nove .box_img img{
+    transition: all 3s ease 0s;
+    height: 200px;
+    width:auto;
+}
+
+.img_quattro:hover{
+    filter:grayscale(50%) sepia(50%);
+    border-radius: 15px;
+    transform: scale(1.1);
+}
+
+.dieci i{
+    animation: rotate-anti 2s linear;
+    font-size: 3em;
+    margin:25px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate-anti
+{
+    0%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+
+
+}
+
+.undici i{
+ 
+    font-size: 3em;
+    margin:25px;
+   
+}
+
+.undici i:hover{
+    animation: rotate 2s linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes rotate
+{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(300deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+
+
+}
+
+
