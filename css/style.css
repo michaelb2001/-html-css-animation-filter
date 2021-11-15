@@ -47,6 +47,10 @@ header{
     transition: all 3s ease 0s;
 }
 
+span{
+    margin:10px 0px;
+}
+
 .uno .square:hover{
     background-color:red;
 } 
@@ -58,7 +62,23 @@ header{
     width:calc(100% - 25px);
 }
 
+.tre .square{
+    background-color: red;
+}
+.tre .square:hover{
+    border-radius: 50% ;
+}
+
+
 .quattro .square{
+    background-color: red;
+}
+
+.quattro .square:hover{
+    opacity: 0;
+}
+
+.cinque .square{
     background-color: red;
     width:75px;
     height:75px;
@@ -67,20 +87,36 @@ header{
     transition: all 3s ease 0s;
 }
 
-.quattro .square:hover{
-    width:100px;
-    height: 100px;
-}
-
-.quattro .square:hover{
+.cinque .square:hover{
     height:100px;
     width:100px;
 }
 
-.quattro .square:active{
+.cinque .square:active{
     height:50px;
     width:50px;
 }
 
+.box_img{
+    width:100%;
+    height: 300px;
+    background-color: rgb(202, 202, 202);
+}
+
+.img{
+    margin: 25px;
+    height: 250px;
+    width:auto;
+}
 
 
+.img_uno:hover{
+    filter: grayscale();
+}
+
+.sette .box_img img{
+    transition: all 3s ease 0s;
+}
+.img_due:hover{
+    filter:grayscale() sepia()
+}
