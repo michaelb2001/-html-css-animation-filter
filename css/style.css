@@ -196,4 +196,75 @@ span{
 
 }
 
+.scritta{
+    height:100px;
+    width:15%;
+    border: 3px solid darkblue;
+    padding: 25px;
+    margin:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: darkblue;
+    position: relative;
+    background-color: transparent;
+}
+
+.top{
+    position:absolute;
+    background-color: rgb(202, 202, 202);
+    top:-10px;
+    left:10%;
+    width: 60px;
+    height: 20px;
+}
+
+.bottom{
+    position:absolute;
+    background-color: rgb(202, 202, 202);
+    bottom:-10px;
+    right:10%;
+    width: 60px;
+    height: 20px;
+}
+
+.dodici .scritta:hover .top{
+    animation: bordo-top 2s linear;
+    transition: all 2s linear 0s;
+}
+.dodici .scritta:hover .bottom{
+    animation: bordo-bottom 2s linear;
+    transition: all 2s linear 0s;
+}
+
+@keyframes bordo-top {
+    0%{
+        left: 10%;
+    }
+    50%{
+        left:calc(100% - 50px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+@keyframes bordo-bottom {
+    0%{
+        right: 10%;
+    }
+    50%{
+        right:calc(100% - 50px);
+    }
+    100%{
+        right: 10%;
+    }
+}
+
+
+
+
+
 
